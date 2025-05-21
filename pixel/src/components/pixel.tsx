@@ -77,7 +77,9 @@ export default function PixelComponent() {
     //       duration: 0.6,
     //     })}
     // })
-  }, [containerRef]);
+  }, {
+    scope :containerRef
+  });
 
   const randomGray = () => {
     const g = Math.floor(Math.random() * 50) + 30; // gives 30–80

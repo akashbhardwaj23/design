@@ -36,7 +36,9 @@ export default function Navbar() {
         })
         
 
-    }, [])
+    }, {
+      scope : containerRef
+    })
 
   return (
     <nav ref={containerRef} className="relative nav z-20 flex justify-between items-center p-8">
